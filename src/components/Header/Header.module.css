@@ -1,0 +1,40 @@
+.header {
+  @apply bg-[#fefbeb] text-[#783510] h-[96px] px-20 py-6;
+}
+
+.headerInner {
+  @apply flex flex-row w-full items-center justify-between gap-4;
+}
+
+.title {
+  @apply font-bold text-2xl px-4 py-2 rounded-md;
+}
+
+.menuButton {
+  @apply p-2 rounded-md;
+  display: block;
+}
+
+.menuLink {
+  @apply text-lg font-medium px-3 py-2 rounded-md;
+}
+
+.button {
+  @apply text-lg font-medium px-4 py-2 rounded-md border-2 border-[#78350F];
+}
+
+.menuScale {
+  @apply text-lg font-medium px-3 py-2 rounded-md;
+}
+
+@media (max-width: 968px) {
+  .menuButton {
+    @apply hidden;
+  }
+  .menuLink {
+    @apply hidden;
+  }
+  .button {
+    @apply hidden;
+  }
+}
