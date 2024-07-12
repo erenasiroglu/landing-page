@@ -1,5 +1,5 @@
 .header {
-  @apply bg-[#fefbeb] text-[#783510] h-[96px] px-20 py-6;
+  @apply flex bg-[#fefbeb] text-[#783510] h-[96px] px-20 py-6;
 }
 
 .headerInner {
@@ -7,7 +7,7 @@
 }
 
 .title {
-  @apply font-bold text-2xl px-4 py-2 rounded-md;
+  @apply font-bold text-[32px] px-4 py-2 rounded-md;
 }
 
 .menuButton {
@@ -28,6 +28,15 @@
 }
 
 @media (max-width: 968px) {
+  .header{
+    @apply flex bg-[#fff] h-[67px] pl-0 py-0 justify-center;
+  }
+  .headerInner {
+    @apply px-4;
+  }
+  .title {
+    @apply text-[32px];
+  }
   .menuButton {
     @apply hidden;
   }
