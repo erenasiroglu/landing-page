@@ -1,0 +1,20 @@
+.container {
+    @apply bg-[#0e172a] p-10;
+    background-image: url('../../assets/images/Backlights.svg');
+}
+
+.row {
+    @apply flex justify-between items-center mb-5 gap-5;
+}
+
+.sectionText {
+    @apply text-4xl font-extrabold text-white flex-grow ml-[5%];
+}
+
+.signupButton {
+    @apply w-[233px] h-16 p-5 border-2 border-white rounded-md text-2xl font-bold leading-6 tracking-wide text-white flex-shrink-0 mr-[5%];
+}
+
+.contentBox {
+    @apply flex flex-row justify-center items-center gap-5;
+}

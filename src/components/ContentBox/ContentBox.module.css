@@ -1,0 +1,20 @@
+.contentBox {
+    @apply w-[394.67px] h-[472px] pt-8 bg-[#0e172a] flex flex-col items-center border border-gray-300 rounded-md shadow-md;
+  }
+  
+  .imagePlaceholder {
+    @apply w-full h-[220px] bg-cover bg-center;
+  }
+  
+  .title {
+    @apply font-roboto text-[24px] text-left font-bold w-[90%] leading-[26.4px] mt-4 text-white mx-5;
+  }
+  
+  .subtitle {
+    @apply font-roboto text-[18px] font-normal text-left leading-[28.8px] mt-2 text-white mx-5;
+  }
+  
+  .buyButton {
+    @apply flex justify-center items-center w-[330px] h-[56px] text-[18px] font-medium text-white gap-2 border-2 border-white mb-5 mt-5;
+  }
+  
