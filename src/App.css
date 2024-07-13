@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply font-sans;
+}
+
+.App > * {
+  padding-left: 80px !important;
+  padding-right: 80px !important;
+}

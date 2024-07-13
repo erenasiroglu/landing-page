@@ -1,60 +1,54 @@
 .container {
-    @apply flex flex-col text-black relative;
+  @apply flex flex-col text-black relative;
+  background-color: #fefbeb;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
 }
 
 .upperContainer {
-    @apply flex items-center w-full h-[750px] bg-cover bg-center bg-no-repeat;
-    background-image: url('../../assets/images/section1.jpg');
+  @apply flex items-center w-full h-[583px] bg-cover bg-center bg-no-repeat relative;
+  background-image: linear-gradient(
+    to bottom right,
+    transparent 50%,
+    #fdf3c7 50%
+  );
 }
 
 .leftSide {
-    @apply flex flex-col justify-center items-start pl-12;
+  @apply flex flex-col justify-center items-start pl-[96px] gap-2.5;
 }
 
 .title {
-    @apply text-7xl font-extrabold mb-5 text-black;
+  @apply text-7xl font-extrabold mb-5 text-black;
 }
 
 .subtitle {
-    @apply w-[80%] text-lg font-normal mb-5 text-black;
+  @apply w-[80%] text-lg font-normal mb-5 text-black;
 }
 
 .button {
-    @apply text-lg font-medium px-4 py-2 rounded-md border-2 border-[#78350F] hover:bg-[#ff4500] cursor-pointer;
+  @apply text-lg font-medium px-4 py-2 rounded-md border-2 border-[#78350F] cursor-pointer;
 }
 
-.videoButton {
-    @apply flex items-center cursor-pointer;
-}
-
-.icon {
-    @apply w-[30px] h-[30px];
-}
-
-.rightSide {
-    @apply flex justify-center items-center;
-}
-
-.buttonsContainer {
-    @apply flex flex-row gap-4;
+.text {
+  @apply font-medium ml-1;
 }
 
 .image {
-    @apply w-[486px] h-[423px] object-contain border-none p-0 m-0 max-w-full max-h-full;
+  @apply mr-[96px];
+}
+.videoButton {
+  @apply flex items-center cursor-pointer;
 }
 
-.lowerContainer {
-    @apply flex flex-row justify-center items-center absolute bottom-0 w-full mt-[200px];
+.icon {
+  @apply w-[30px] h-[30px];
 }
 
-.column {
-    @apply flex flex-col justify-center text-left w-[450px] p-4 text-left;
+.buttonsContainer {
+  @apply flex flex-row gap-4 text-[#78350F];
 }
 
-.columnTitle {
-    @apply text-xl font-medium mb-2 text-black;
-}
-
-.columnSubtitle {
-    @apply text-lg font-normal mb-4 text-black;
+.image {
+  @apply w-[486px] h-[423px] object-contain border-none p-0 m-0 max-w-full max-h-full;
 }

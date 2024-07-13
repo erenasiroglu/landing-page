@@ -7,11 +7,11 @@
   }
   
   .title {
-    @apply font-roboto text-[24px] text-left font-bold w-[90%] leading-[26.4px] mt-4 text-white mx-5;
+    @apply text-[24px] text-left font-bold w-[90%] leading-[26.4px] mt-4 text-white mx-5;
   }
   
   .subtitle {
-    @apply font-roboto text-[18px] font-normal text-left leading-[28.8px] mt-2 text-white mx-5;
+    @apply text-[18px] font-normal text-left leading-[28.8px] mt-2 text-white mx-5;
   }
   
   .buyButton {
