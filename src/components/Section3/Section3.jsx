@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Section3.module.css";
 import sectionSvg from "../../assets/images/Deco-video.svg";
-import videoSvg from "../../assets/images/Video.svg";
+import videoSvg from "../../assets/images/Desktop.svg";
 import checkSvg from "../../assets/icons/check.svg";
 
 const Section3 = () => {

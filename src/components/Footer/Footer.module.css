@@ -1,76 +1,91 @@
 .footer {
-    background: #0F172A;
-    color: white;
-    padding: 2rem;
-  }
-  
-  .columns {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .column {
-    flex: 1;
-    min-width: 200px;
-    margin: 1rem;
-  }
-  
-  .column h3 {
-    margin-bottom: 1rem;
-font-size: 16px;
-font-weight: 500;
-line-height: 17.6px;
+  background: #0f172a;
+  color: white;
+  padding: 2rem;
+}
 
-  }
-  
-  .column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .column ul li {
-    margin-bottom: 0.5rem;
+.columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-font-size: 16px;
-font-weight: 400;
-line-height: 22.4px;
-margin-top: 20px;
+.column {
+  flex: 1;
+  min-width: 200px;
+  margin: 1rem;
+}
 
-  }
-  
-  .followUs {
-    margin: 2rem 0;
-  }
-  
-  .socialIcons {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .socialIcons img {
-    width: 24px; /* icon boyutunu ayarlayabilirsiniz */
-    height: 24px;
-  }
-  
-  .separator {
-    border: none;
-    border-top: 1px solid #fff;
-    margin: 1rem 0;
-    width: 100%;
-  }
-  
-  .bottom {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .left, .right {
-    margin: 0.5rem 0;
-  }
-  
-  .right span {
-    margin-left: 1rem;
-  }
-  
+.column h3 {
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17.6px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column ul li {
+  margin-bottom: 0.5rem;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  margin-top: 20px;
+}
+
+.followUs {
+  margin: 2rem 0;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialIcons img {
+  width: 24px;
+  height: 24px;
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid #fff;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left,
+.right {
+  margin: 0.5rem 0;
+}
+
+.right span {
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+ .columns {
+  text-align: center;
+ }
+
+ .column ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+ }
+
+ .left {
+  font-size: 16px
+ }
+}

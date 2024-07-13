@@ -75,6 +75,25 @@
   .container {
     flex-direction: column;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-top: 40px;
+    height: 640px;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
   }
 
   .left,

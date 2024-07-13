@@ -1,10 +1,40 @@
 .lowerContainer {
-    @apply flex items-center justify-center w-full h-auto bg-cover bg-center bg-no-repeat relative;
-    background-image: linear-gradient(
-      to top right,
-      transparent 0%,
-      #fdf3c7 50%
-    );
+  @apply flex items-center justify-center w-full h-auto bg-cover bg-center bg-no-repeat relative;
+  background-image: linear-gradient(to top right, transparent 0%, #fdf3c7 50%);
+}
+
+.column {
+  @apply flex flex-col justify-center w-[450px] relative;
+  z-index: 2;
+}
+
+.columnTitle {
+  @apply text-xl font-medium mb-2 text-black;
+}
+
+.columnSubtitle {
+  @apply w-[373px] text-lg font-normal mb-4 text-black;
+}
+
+.icon {
+  @apply w-[64px] h-[64px] mb-4;
+}
+
+.backgroundIcon {
+  @apply absolute w-[60px] h-[60px];
+  z-index: 1;
+}
+
+.column:nth-child(1) .backgroundIcon {
+  @apply top-[-10%] left-[6%];
+}
+
+.column:nth-child(2) .backgroundIcon {
+  @apply top-[-9%] left-[6%] w-[53px] h-[53px];
+}
+
+.column:nth-child(3) .backgroundIcon {
+  @apply top-[-0%] left-[10%] w-[45px] h-[45px];
 }
 
 @media (max-width: 768px) {
@@ -15,38 +45,20 @@
   .column {
     @apply items-center text-center w-full mb-8;
   }
-}
 
-.column {
-    @apply flex flex-col justify-center w-[450px] relative;
-    z-index: 2;
-}
+  .columnSubtitle {
+    @apply w-[370px];
+  }
 
-.columnTitle {
-    @apply text-xl font-medium mb-2 text-black;
-}
+  .column:nth-child(1) .backgroundIcon {
+    @apply top-[-5%] left-[48%];
+  }
 
-.columnSubtitle {
-    @apply text-lg font-normal mb-4 text-black;
-}
+  .column:nth-child(2) .backgroundIcon {
+    @apply top-[-5%] left-[48%];
+  }
 
-.icon {
-    @apply w-[64px] h-[64px] mb-4;
-}
-
-.backgroundIcon {
-    @apply absolute w-[60px] h-[60px];
-    z-index: 1;
-}
-
-.column:nth-child(1) .backgroundIcon {
-    @apply top-[-10%] left-[6%];
-}
-
-.column:nth-child(2) .backgroundIcon {
-    @apply top-[-10%] left-[6%];
-}
-
-.column:nth-child(3) .backgroundIcon {
-    @apply top-[-10%] left-[6%];
+  .column:nth-child(3) .backgroundIcon {
+    @apply top-[0%] left-[52%];
+  }
 }

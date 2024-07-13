@@ -27,9 +27,11 @@
   @apply text-lg font-medium px-3 py-2 rounded-md;
 }
 
-@media (max-width: 968px) {
+@media (max-width: 768px) {
   .header{
-    @apply flex bg-[#fff] h-[67px] pl-0 py-0 justify-center;
+    @apply flex bg-[#fff] h-[67px] pl-0 py-0 justify-between;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
   .headerInner {
     @apply px-4;

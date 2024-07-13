@@ -52,3 +52,31 @@
 .activeSlide {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+
+  .container {
+    height: auto;
+    padding: 20px;
+  }
+  .title {
+    font-size: 32px;
+  }
+
+  .button {
+    display: none;
+  }
+  
+  .containerInner {
+    padding: 0;
+    width: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sliderContainer {
+    width: 768px;
+    height: 277px;
+  }
+}

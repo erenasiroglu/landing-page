@@ -18,3 +18,24 @@
 .contentBox {
     @apply flex flex-row justify-center items-center gap-5;
 }
+
+@media (max-width: 768px) {
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.sectionText {
+    width: 100%;
+    font-size: 32px;
+}
+.contentBox {
+    display: flex;
+    flex-direction: column;
+}
+}
