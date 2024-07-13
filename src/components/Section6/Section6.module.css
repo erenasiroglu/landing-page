@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section {
+  @apply relative h-[685px] flex justify-center items-center;
+}
+
+.background {
+  @apply absolute w-full h-full z-[-1] bg-[#783510] flex justify-center items-center;
+}
+
+.shield {
+  @apply absolute z-[1] max-w-full h-auto;
+}
+
+.collection {
+  @apply absolute z-[0] max-w-full h-auto;
+}
+
+.tooltip {
+  @apply absolute left-[185px] bottom-[340px] z-[2] max-w-full h-auto;
+}
+
+.textContainer {
+  @apply relative z-[3] flex flex-col justify-center items-center text-center;
+}
+
+.title {
+  @apply text-[96px] font-extrabold leading-[105.6px] text-[#FFFBEB];
+}
+
+.subtitle {
+  @apply text-[56px] font-extrabold leading-[61.6px] text-[#FFFBEB];
+}
