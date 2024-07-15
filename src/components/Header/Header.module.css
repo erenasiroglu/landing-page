@@ -10,6 +10,9 @@
   @apply font-bold text-[32px] px-4 py-2 rounded-md;
 }
 
+.menuWrapper {
+  @apply flex gap-3;
+}
 .menuButton {
   @apply p-2 rounded-md;
   display: block;

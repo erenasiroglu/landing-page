@@ -7,7 +7,7 @@ import facebookSvg from '../../assets/icons/facebook.svg';
 import twitterSvg from '../../assets/icons/twitter.svg';
 import instagramSvg from '../../assets/icons/instagram.svg';
 import linkedinSvg from '../../assets/icons/linkedin.svg';
-// import worldSvg from '../../assets/icons/world.svg';
+import worldSvg from '../../assets/icons/world.svg';
 
 const Footer = () => {
   return (
@@ -50,22 +50,26 @@ const Footer = () => {
             <li><img src={googlePlaySvg} alt="Google Play" /></li>
           </ul>
           <div className={styles.followUs}>
-        <h3>Follow Us</h3>
-        <div className={styles.socialIcons}>
-          <img src={youtubeSvg} alt="YouTube" />
-          <img src={facebookSvg} alt="Facebook" />
-          <img src={twitterSvg} alt="Twitter" />
-          <img src={instagramSvg} alt="Instagram" />
-          <img src={linkedinSvg} alt="LinkedIn" />
-        </div>
-      </div>
+            <h3>Follow Us</h3>
+            <div className={styles.socialIcons}>
+              <img src={youtubeSvg} alt="YouTube" />
+              <img src={facebookSvg} alt="Facebook" />
+              <img src={twitterSvg} alt="Twitter" />
+              <img src={instagramSvg} alt="Instagram" />
+              <img src={linkedinSvg} alt="LinkedIn" />
+            </div>
+          </div>
         </div>
       </div>
       <hr className={styles.separator} />
       <div className={styles.bottom}>
         <p className={styles.left}>Collers @ 2023. All rights reserved.</p>
         <p className={styles.right}>
-          <span>Terms</span> <span>Privacy</span> <span>Contact</span> <span> EN</span>
+          <span>Terms</span> <span>Privacy</span> <span>Contact</span> 
+          <span className={styles.language}>
+            <img src={worldSvg} alt="World" className={styles.worldIcon} />
+            EN
+          </span>
         </p>
       </div>
     </footer>

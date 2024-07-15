@@ -1,6 +1,7 @@
 .container {
     @apply bg-[#0e172a] p-10;
     background-image: url('../../assets/images/Backlights.svg');
+    height: 776px;
 }
 
 .row {
@@ -8,11 +9,11 @@
 }
 
 .sectionText {
-    @apply text-4xl font-extrabold text-white flex-grow ml-[5%];
+    @apply text-[56px] font-extrabold text-white flex-grow ml-[2%];
 }
 
 .signupButton {
-    @apply w-[233px] h-16 p-5 border-2 border-white rounded-md text-2xl font-bold leading-6 tracking-wide text-white flex-shrink-0 mr-[5%];
+    @apply w-[233px] h-16 p-5 border-2 border-white rounded-md text-2xl font-bold leading-6 tracking-wide text-white flex-shrink-0 mr-[2%];
 }
 
 .contentBox {

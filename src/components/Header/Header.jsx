@@ -46,10 +46,7 @@ const Header = () => {
             </button>
           </div>
         ) : (
-          <div
-            className="hidden md:flex space-x-4     display: flex;
-    gap: 20px;"
-          >
+          <div className={styles.menuWrapper}>
             <a href="#" className={styles.menuLink}>
               Products
             </a>

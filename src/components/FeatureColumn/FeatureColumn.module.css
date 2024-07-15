@@ -1,5 +1,5 @@
 .lowerContainer {
-  @apply flex items-center justify-center w-full h-auto bg-cover bg-center bg-no-repeat relative;
+  @apply flex items-center justify-center w-full h-[366px] bg-cover bg-center bg-no-repeat relative;
   background-image: linear-gradient(to top right, transparent 0%, #fdf3c7 50%);
 }
 

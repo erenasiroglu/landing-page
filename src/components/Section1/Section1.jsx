@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Section1.module.css";
 import playCircle from "../../assets/icons/play-circle.svg";
 import sneakerImage from "../../assets/images/Col.svg";
-
 import FeatureColumn from "../FeatureColumn/FeatureColumn";
 
 const Section1 = () => {
@@ -25,7 +24,9 @@ const Section1 = () => {
               </div>
             </div>
           </div>
-          <img src={sneakerImage} alt="Sneaker" className={styles.image} />
+          <div className={styles.imageWrapper}>
+            <img src={sneakerImage} alt="Sneaker" className={styles.image} />
+          </div>
         </div>
       </div>
       <FeatureColumn />

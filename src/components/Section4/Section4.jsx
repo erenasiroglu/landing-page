@@ -53,14 +53,7 @@ const slides = [
     title: "Hellena John",
     subtitle: "Co-founder",
   },
-  {
-    icon: artVenue,
-    description:
-      "Non risus viverra enim, quis. Eget vitae arcu vivamus sit tellus, viverra turpis lorem. Varius a turpis urna id porttitor.",
-    imageSrc: userThumb,
-    title: "Hellen Jummy",
-    subtitle: "Team Lead",
-  },
+
 ];
 
 const Section4 = () => {
@@ -88,18 +81,20 @@ const Section4 = () => {
     <div className={styles.container}>
       <div className={styles.containerInner}>
         <div className={styles.title}>Because they love us</div>
-        <img
-          src={previousButton}
-          className={styles.button}
-          alt="Previous"
-          onClick={showPreviousSlide}
-        />
-        <img
-          src={nextButton}
-          className={styles.button}
-          alt="Next"
-          onClick={showNextSlide}
-        />
+        <div className={styles.buttonsContainer}>
+          <img
+            src={previousButton}
+            className={styles.button}
+            alt="Previous"
+            onClick={showPreviousSlide}
+          />
+          <img
+            src={nextButton}
+            className={styles.button}
+            alt="Next"
+            onClick={showNextSlide}
+          />
+        </div>
       </div>
       <div className={styles.sliderContainer} ref={sliderContainerRef}>
         {slides.map((slide, index) => (

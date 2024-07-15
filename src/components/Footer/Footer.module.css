@@ -13,7 +13,7 @@
 .column {
   flex: 1;
   min-width: 200px;
-  margin: 1rem;
+  margin: 48px 0;
 }
 
 .column h3 {
@@ -21,6 +21,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 17.6px;
+  cursor:pointer;
 }
 
 .column ul {
@@ -30,15 +31,16 @@
 
 .column ul li {
   margin-bottom: 0.5rem;
-
   font-size: 16px;
   font-weight: 400;
   line-height: 22.4px;
   margin-top: 20px;
+  cursor:pointer;
 }
 
 .followUs {
   margin: 2rem 0;
+  cursor:pointer;
 }
 
 .socialIcons {
@@ -66,6 +68,7 @@
 
 .left,
 .right {
+  display: flex;
   margin: 0.5rem 0;
 }
 
@@ -73,19 +76,28 @@
   margin-left: 1rem;
 }
 
-@media (max-width: 768px) {
- .columns {
-  text-align: center;
- }
-
- .column ul {
+.language {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center ;
- }
+  align-items: center;
+}
 
- .left {
-  font-size: 16px
- }
+.worldIcon {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .columns {
+    text-align: center;
+  }
+
+  .column ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+    font-size: 16px;
+  }
 }
