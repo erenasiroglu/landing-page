@@ -4,9 +4,9 @@ import previousButton from "../../assets/icons/previous-button.svg";
 import nextButton from "../../assets/icons/next-button.svg";
 import Slider from "../Slider/Slider";
 
-import artVenue from "../../assets/images/art-venue.svg";
-import shellsIcon from "../../assets/images/shells-icon.svg";
-import zoomerIcon from "../../assets/images/zoomer-icon.svg";
+import artVenue from "../../assets/icons/art-venue.svg";
+import shellsIcon from "../../assets/icons/shells-icon.svg";
+import zoomerIcon from "../../assets/icons/zoomer-icon.svg";
 
 import userThumb from "../../assets/images/user-thumb.svg";
 import userThumb1 from "../../assets/images/user-thumb-1.svg";
@@ -53,7 +53,6 @@ const slides = [
     title: "Hellena John",
     subtitle: "Co-founder",
   },
-
 ];
 
 const Section4 = () => {
@@ -70,7 +69,9 @@ const Section4 = () => {
   }, []);
 
   const showPreviousSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + slides.length) % slides.length
+    );
   };
 
   const showNextSlide = () => {
@@ -100,10 +101,15 @@ const Section4 = () => {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`${styles.slide} ${index >= currentIndex && index < currentIndex + 3 ? styles.activeSlide : ''}`}
+            className={`${styles.slide} ${
+              index >= currentIndex && index < currentIndex + 3
+                ? styles.activeSlide
+                : ""
+            }`}
             style={{
               transform: `translateX(${(index - currentIndex) * 20}%)`,
-              opacity: index >= currentIndex && index < currentIndex + 3 ? 1 : 0,
+              opacity:
+                index >= currentIndex && index < currentIndex + 3 ? 1 : 0,
             }}
           >
             <Slider

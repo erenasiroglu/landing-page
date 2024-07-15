@@ -31,16 +31,16 @@
 }
 
 @media (max-width: 768px) {
+  .section {
+    @apply h-[712px];
+  }
   .title {
-    font-size: 48px;
-    line-height: 52px;
+    @apply text-[48px] leading-[52px];
   }
   .subtitle {
-    font-size: 32px;
+    @apply text-[32px];
   }
-
   .tooltip {
-    left: 10px;
-    bottom: 360px;
+    @apply left-[10px] bottom-[360px];
   }
 }

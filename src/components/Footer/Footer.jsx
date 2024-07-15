@@ -1,13 +1,13 @@
-import React from 'react';
-import styles from './Footer.module.css';
-import appStoreSvg from '../../assets/icons/app-store.svg';
-import googlePlaySvg from '../../assets/icons/google-play.svg';
-import youtubeSvg from '../../assets/icons/youtube.svg';
-import facebookSvg from '../../assets/icons/facebook.svg';
-import twitterSvg from '../../assets/icons/twitter.svg';
-import instagramSvg from '../../assets/icons/instagram.svg';
-import linkedinSvg from '../../assets/icons/linkedin.svg';
-import worldSvg from '../../assets/icons/world.svg';
+import React from "react";
+import styles from "./Footer.module.css";
+import appStoreSvg from "../../assets/icons/app-store.svg";
+import googlePlaySvg from "../../assets/icons/google-play.svg";
+import youtubeSvg from "../../assets/icons/youtube.svg";
+import facebookSvg from "../../assets/icons/facebook.svg";
+import twitterSvg from "../../assets/icons/twitter.svg";
+import instagramSvg from "../../assets/icons/instagram.svg";
+import linkedinSvg from "../../assets/icons/linkedin.svg";
+import worldSvg from "../../assets/icons/world.svg";
 
 const Footer = () => {
   return (
@@ -46,8 +46,12 @@ const Footer = () => {
         <div className={styles.column}>
           <h3>Get the App</h3>
           <ul>
-            <li><img src={appStoreSvg} alt="App Store" /></li>
-            <li><img src={googlePlaySvg} alt="Google Play" /></li>
+            <li>
+              <img src={appStoreSvg} alt="App Store" />
+            </li>
+            <li>
+              <img src={googlePlaySvg} alt="Google Play" />
+            </li>
           </ul>
           <div className={styles.followUs}>
             <h3>Follow Us</h3>
@@ -65,7 +69,7 @@ const Footer = () => {
       <div className={styles.bottom}>
         <p className={styles.left}>Collers @ 2023. All rights reserved.</p>
         <p className={styles.right}>
-          <span>Terms</span> <span>Privacy</span> <span>Contact</span> 
+          <span>Terms</span> <span>Privacy</span> <span>Contact</span>
           <span className={styles.language}>
             <img src={worldSvg} alt="World" className={styles.worldIcon} />
             EN

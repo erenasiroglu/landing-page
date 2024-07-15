@@ -1,42 +1,45 @@
 .container {
-    @apply bg-[#0e172a] p-10;
-    background-image: url('../../assets/images/Backlights.svg');
-    height: 776px;
+  @apply bg-[#0e172a] p-10;
+  background-image: url("../../assets/images/Backlights.svg");
+  height: 776px;
 }
 
 .row {
-    @apply flex justify-between items-center mb-5 gap-5;
+  @apply flex justify-between items-center mb-5 gap-5;
 }
 
 .sectionText {
-    @apply text-[56px] font-extrabold text-white flex-grow ml-[2%];
+  @apply text-[56px] font-extrabold text-white flex-grow ml-[2%];
 }
 
 .signupButton {
-    @apply w-[233px] h-16 p-5 border-2 border-white rounded-md text-2xl font-bold leading-6 tracking-wide text-white flex-shrink-0 mr-[2%];
+  @apply w-[233px] h-16 p-5 border-2 border-white rounded-md text-2xl font-bold leading-6 tracking-wide text-white flex-shrink-0 mr-[2%];
 }
 
 .contentBox {
-    @apply flex flex-row justify-center items-center gap-5;
+  @apply flex flex-row justify-center items-center gap-5;
 }
 
 @media (max-width: 768px) {
-.container {
+  .container {
     display: flex;
     flex-direction: column;
-}
+    height: 1739px;
+  }
 
-.row {
+  .row {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
-}
-.sectionText {
-    width: 100%;
+  }
+  .sectionText {
     font-size: 32px;
-}
-.contentBox {
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .contentBox {
     display: flex;
     flex-direction: column;
-}
+  }
 }

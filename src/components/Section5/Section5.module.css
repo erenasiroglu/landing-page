@@ -57,13 +57,15 @@
   padding: 16px;
   width: 256px;
   height: 56px;
-  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .iconButton:hover {
   box-shadow: 0px 0px 8px 0px #00000024;
   border-radius: 8px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .iconButton img {
@@ -84,7 +86,7 @@
 }
 
 .iconButton:hover .arrowIcon {
-  opacity: 1; 
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
@@ -97,7 +99,7 @@
     padding-left: 0px !important;
     padding-right: 0px !important;
     margin-top: 40px;
-    height: 640px;
+    height: 722px;
   }
 
   .title {
@@ -107,6 +109,7 @@
   }
 
   .subtitle {
+    width: 361px;
     font-size: 16px;
     line-height: 22px;
     text-align: center;
@@ -122,28 +125,10 @@
     justify-content: center;
   }
 
-  .iconButton {
-    width: auto;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
-    position: relative;
-  }
-
-  .iconButton:hover {
-    box-shadow: 0px 0px 8px 0px #00000024;
-    border-radius: 8px;
-    background-color: #FFFFFF;
-  }
-
   .arrowIcon {
     position: absolute;
     right: 16px;
     opacity: 0;
     transition: opacity 0.3s ease;
-  }
-
-  .iconButton:hover .arrowIcon {
-    opacity: 1; /* Show arrow icon on hover */
   }
 }

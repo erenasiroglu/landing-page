@@ -31,7 +31,7 @@
 }
 
 @media (max-width: 768px) {
-  .header{
+  .header {
     @apply flex bg-[#fff] h-[67px] pl-0 py-0 justify-between;
     padding-left: 0px !important;
     padding-right: 0px !important;

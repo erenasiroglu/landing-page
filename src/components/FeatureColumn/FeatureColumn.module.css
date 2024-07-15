@@ -39,7 +39,7 @@
 
 @media (max-width: 768px) {
   .lowerContainer {
-    @apply flex-col;
+    @apply flex-col h-[775px];
   }
 
   .column {

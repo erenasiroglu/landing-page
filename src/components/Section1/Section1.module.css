@@ -1,9 +1,7 @@
 .container {
-  @apply flex flex-col text-black relative;
-  background-color: #fefbeb;
+  @apply flex flex-col text-black relative h-[583px] bg-[#fefbeb];
   padding-right: 0px !important;
   padding-left: 0px !important;
-  height: 583px;
 }
 
 .upperContainer {
@@ -55,13 +53,13 @@
 }
 
 .imageWrapper {
-  @apply pr-[80px]
+  padding-right: 5%;
 }
 
 @media (max-width: 768px) {
   .container {
-    padding-right: 0px !important;
-    padding-left: 0px !important;
+    height: 802px;
+    padding: 48px 0 0 0;
   }
 
   .upperContainer {
@@ -84,17 +82,21 @@
     text-align: center;
   }
 
-  .buttonsContainer{
+  .buttonsContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
 
+  .imageWrapper {
+    padding-right: 0;
+  }
+
   .image {
     justify-content: center;
     align-items: center;
-    width:273px;
+    width: 273px;
     height: 276px;
   }
 }

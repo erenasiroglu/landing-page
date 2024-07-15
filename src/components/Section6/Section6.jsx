@@ -14,11 +14,7 @@ const Section6 = () => {
           alt="Collection"
           className={styles.collection}
         />
-        <img
-          src={tooltipSvg}
-          alt="Tooltip"
-          className={styles.tooltip}
-        />
+        <img src={tooltipSvg} alt="Tooltip" className={styles.tooltip} />
       </div>
       <div className={styles.textContainer}>
         <div className={styles.title}>11,658,467</div>
